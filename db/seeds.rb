@@ -1,44 +1,28 @@
 Flat.destroy_all
 
-puts "Start seed"
-puts "Flat Toulon was created"
 Flat.create!(
-  name: 'Light & Spacious Garden Flat Toulon',
-  address: '10 Clifton Gardens Toulon W9 1DT',
+  name: 'Light & Spacious Garden Flat London',
+  address: '10 Clifton Gardens London W9 1DT',
+  picture_url: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
   number_of_guests: 3
 )
-puts "Flat Marseille was created"
+
 Flat.create!(
-  name: 'Light & Spacious Garden Flat Marseille',
-  address: '11 Clifton Gardens Marseille W9 1DT',
-  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms',
-  price_per_night: 90,
+  name: 'Stylish House Close to River Thames',
+  address: '5 Queensmill Road London SW6 6JP',
+  picture_url: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200',
+  description: 'Lovely warm comfortable and stylishly furnished house. Private bedroom and bathroom with shared living areas.',
+  price_per_night: 65,
   number_of_guests: 2
 )
-puts "Flat Nice was created"
+
 Flat.create!(
-  name: 'Light & Spacious Garden Flat Nice',
-  address: '12 Clifton Gardens Nice W9 1DT',
-  description: 'A lovely summer feel for this spacious garden flat',
-  price_per_night: 60,
-  number_of_guests: 1
-)
-puts "Flat Paris was created"
-Flat.create!(
-  name: 'Light & Spacious Garden Flat Paris',
-  address: '13 Clifton Gardens Paris W9 1DT',
-  description: 'I like this flat',
-  price_per_night: 80,
+  name: 'St Pancras Clock Tower Guest Suite',
+  address: 'Euston Rd London N1C 4QP',
+  picture_url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200',
+  description: 'A mini apartment within the clock tower apartment at St Pancras Station, with its own en suite bathroom and kitchen and sitting area.',
+  price_per_night: 110,
   number_of_guests: 2
 )
-puts "Flat Nimes was created"
-Flat.create!(
-  name: 'Light & Spacious Garden Flat Nimes',
-  address: '14 Clifton Gardens Nimes W9 1DT',
-  description: 'A lovely summer flat',
-  price_per_night: 100,
-  number_of_guests: 4
-)
-puts "End seed"
