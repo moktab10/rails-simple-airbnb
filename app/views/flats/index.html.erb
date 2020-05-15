@@ -1,8 +1,8 @@
 <div class="container mt-5">
   <h1>All our Flats (<%= @flats.count %>)</h1>
-  <div class="d-flex">
+  <div class="grid-container">
     <% @flats.each do |flat| %>
-    <div class="card" style="width: 800px;">
+    <div class="card">
       <img class="card-img-top" src="<%= flat.picture_url %>" alt="Card image cap ">
       <div class="body-card">
         <div>
@@ -12,6 +12,15 @@
         <div class="d-flex">
           <p><i class="fas fa-user-friends"></i></p><p class="pricenumber"><%= flat.number_of_guests %></p>
           <p><i class="fas fa-euro-sign"></i></p><p class="pricenumber"><%= flat.price_per_night %></p>
+        </div>
+        <div>
+          <%= link_to 'More info', flat_path(flat) %>
+            <%= link_to 'Edit', edit_flat_path(flat), class: 'ml-3 text-warning' %>
+            <%= link_to "Remove", flat_path(flat),
+                method: :delete,
+                data: { confirm: "Are you sure?" },
+                class: 'ml-3 text-danger'
+            %>
         </div>
       </div>
     </div>
